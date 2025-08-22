@@ -3,15 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Fashion Store</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-neutral-50 text-neutral-900 antialiased scroll-smooth">
+    <header id="header" class="px-4 py-4">
+      <div class="flex flex-1 justify-between max-w-[1100px] mx-auto">
+        <nav class="flex items-center gap-4">
+          <ul class="hidden lg:flex flex-row gap-4">
+            <li><a href="/">Início</a></li>
+            <li><a href="/">Roupas</a></li>
+            <li><a href="/">Acessórios</a></li>
+            <li><a href="/">Calçados</a></li>
+          </ul>
+          <button type="button" class="px-3 py-1 rounded-md cursor-pointer">
+            Menu
+          </button>
+        </nav>
+        <span class="text-3xl uppercase font-bold font-title tracking-wide"
+          >Reflect</span
+        >
+        <nav class="flex items-center gap-4">
+          <div class="hidden lg:flex flex-row gap-2">
+            <input
+              type="text"
+              name="search"
+              id="input-search"
+              value=""
+              placeholder="Pesquisar..."
+              class="px-3 py-1 rounded-lg"
+            />
+            <button type="button" class="px-3 py-1 rounded-md cursor-pointer">
+              Pesquisar
+            </button>
+          </div>
+          <button type="button" class="px-3 py-1 rounded-md cursor-pointer">
+            Cart
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div
+      id="hero"
+      class="flex flex-col flex-1 lg:flex-row w-full h-screen lg:px-4"
+    >
+      <div class="flex flex-col lg:flex-row flex-1 justify-between w-full max-w-[1100px] mx-auto">
+        <div class="flex flex-col justify-between gap-12 flex-1 px-4 py-8">
+          <div class="flex flex-col justify-between gap-8 flex-1 w-full h-full lg:w-1/2">
+            <h1 class="text-5xl lg:text-9xl font-title font-bold leading-none">
+              Reflect Fashion
+            </h1>
+            <span class="text-base font-content"
+              >A moda de um jeito que você nunca viu, em uma loja especialmente
+              desenhada para você se encantar e se encontrar!</span
+            >
+          </div>
+          <button
+            type="button"
+            class="max-w-96 bg-neutral-900 hover:bg-neutral-900/90 transition-all duration-300 px-4 py-2 lg:px-8 lg:py-4 cursor-pointer"
+          >
+            <span class="text-sm lg:text-xl text-neutral-50 font-bold uppercase"
+              >Ver produtos</span
+            >
+          </button>
+        </div>
+        <div
+          class="w-full lg:w-1/2 h-screen bg-cover bg-center bg-center bg-[url(https://i.pinimg.com/1200x/22/2d/bf/222dbfce8f0882c5d7760ed222993d73.jpg)]"
+        ></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
