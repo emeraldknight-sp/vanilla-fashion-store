@@ -13,70 +13,267 @@
     <title>Fashion Store</title>
   </head>
   <body class="bg-neutral-50 text-neutral-900 antialiased scroll-smooth">
-    <header id="header" class="px-4 py-4">
-      <div class="flex flex-1 justify-between max-w-[1100px] mx-auto">
-        <nav class="flex items-center gap-4">
-          <ul class="hidden lg:flex flex-row gap-4">
-            <li><a href="/">Início</a></li>
-            <li><a href="/">Roupas</a></li>
-            <li><a href="/">Acessórios</a></li>
-            <li><a href="/">Calçados</a></li>
-          </ul>
-          <button type="button" class="px-3 py-1 rounded-md cursor-pointer">
-            Menu
-          </button>
-        </nav>
-        <span class="text-3xl uppercase font-bold font-title tracking-wide"
-          >Reflect</span
-        >
-        <nav class="flex items-center gap-4">
-          <div class="hidden lg:flex flex-row gap-2">
-            <input
-              type="text"
-              name="search"
-              id="input-search"
-              value=""
-              placeholder="Pesquisar..."
-              class="px-3 py-1 rounded-lg"
-            />
-            <button type="button" class="px-3 py-1 rounded-md cursor-pointer">
-              Pesquisar
+    <div id="large-container" class="flex flex-col">
+      <header id="header" class="px-4 py-4">
+        <div class="flex flex-1 justify-between max-w-[1100px] mx-auto">
+          <nav class="flex items-center gap-4">
+            <ul class="hidden lg:flex lg:flex-row lg:gap-8">
+              <li>
+                <a
+                  href="/"
+                  class="text-neutral-900 text-center font-content underline-offset-4 transition-all duration-200 no-underline hover:underline"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="text-neutral-900 text-center font-content underline-offset-4 transition-all duration-200 no-underline hover:underline"
+                  >Roupas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="text-neutral-900 text-center font-content underline-offset-4 transition-all duration-200 no-underline hover:underline"
+                  >Acessórios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="text-neutral-900 text-center font-content underline-offset-4 transition-all duration-200 no-underline hover:underline"
+                  >Calçados</a
+                >
+              </li>
+            </ul>
+            <button type="button" class="px-3 py-1 rounded-md cursor-pointer lg:hidden">
+              <span class="">Menu</span>
+            </button>
+          </nav>
+          <span class="text-3xl uppercase font-bold font-title tracking-wide">Reflect</span>
+          <nav class="flex items-center gap-4">
+            <div class="hidden lg:flex flex-row gap-2">
+              <input
+                type="text"
+                name="search"
+                id="input-search"
+                value=""
+                placeholder="Pesquisar..."
+                class="px-3 py-1 rounded-lg"
+              />
+              <button type="button" class="px-3 py-1 rounded-md cursor-pointer">Pesquisar</button>
+            </div>
+            <button type="button" class="px-3 py-1 rounded-md cursor-pointer">Cart</button>
+          </nav>
+        </div>
+      </header>
+      <div id="hero" class="flex flex-col flex-1 lg:flex-row w-full h-screen lg:px-4">
+        <div class="flex flex-col lg:flex-row flex-1 justify-between w-full max-w-[1100px] mx-auto">
+          <div class="flex flex-col justify-between gap-12 flex-1 px-4 py-8 lg:px-0">
+            <div class="flex flex-col gap-8 flex-1 w-full h-full lg:w-1/2">
+              <h1 class="text-5xl lg:text-9xl font-title font-bold leading-none">
+                Reflect Fashion
+              </h1>
+              <span class="text-base font-content"
+                >A moda de um jeito que você nunca viu, em uma loja especialmente desenhada para
+                você se encantar e se encontrar!</span
+              >
+            </div>
+            <button
+              type="button"
+              class="max-w-96 bg-neutral-900 hover:bg-neutral-900/90 transition-all duration-300 px-4 py-2 lg:px-8 lg:py-4 cursor-pointer"
+            >
+              <span class="text-sm lg:text-xl text-neutral-50 font-bold uppercase"
+                >Ver produtos</span
+              >
             </button>
           </div>
-          <button type="button" class="px-3 py-1 rounded-md cursor-pointer">
-            Cart
-          </button>
-        </nav>
-      </div>
-    </header>
-    <div
-      id="hero"
-      class="flex flex-col flex-1 lg:flex-row w-full h-screen lg:px-4"
-    >
-      <div class="flex flex-col lg:flex-row flex-1 justify-between w-full max-w-[1100px] mx-auto">
-        <div class="flex flex-col justify-between gap-12 flex-1 px-4 py-8">
-          <div class="flex flex-col justify-between gap-8 flex-1 w-full h-full lg:w-1/2">
-            <h1 class="text-5xl lg:text-9xl font-title font-bold leading-none">
-              Reflect Fashion
-            </h1>
-            <span class="text-base font-content"
-              >A moda de um jeito que você nunca viu, em uma loja especialmente
-              desenhada para você se encantar e se encontrar!</span
-            >
-          </div>
-          <button
-            type="button"
-            class="max-w-96 bg-neutral-900 hover:bg-neutral-900/90 transition-all duration-300 px-4 py-2 lg:px-8 lg:py-4 cursor-pointer"
-          >
-            <span class="text-sm lg:text-xl text-neutral-50 font-bold uppercase"
-              >Ver produtos</span
-            >
-          </button>
+          <div
+            class="w-full lg:w-1/2 h-screen bg-cover bg-center bg-[url(https://i.pinimg.com/1200x/22/2d/bf/222dbfce8f0882c5d7760ed222993d73.jpg)]"
+          ></div>
         </div>
-        <div
-          class="w-full lg:w-1/2 h-screen bg-cover bg-center bg-center bg-[url(https://i.pinimg.com/1200x/22/2d/bf/222dbfce8f0882c5d7760ed222993d73.jpg)]"
-        ></div>
       </div>
+      <main id="main" class="px-4 py-4">
+        <div class="max-w-[1100px] mx-auto">
+          <div id="collection" class="flex flex-col gap-2">
+            <h3 class="text-neutral-900 text-3xl font-title font-bold tracking-wider">
+              Nossa coleção
+            </h3>
+            <nav id="collection-filter" class="flex flex-row gap-2 overflow-x-scroll pb-2">
+              <button
+                id="todos"
+                type="button"
+                class="bg-neutral-50 border-b-2 border-neutral-50 px-2 menu-btn"
+              >
+                <span class="text-sm text-neutral-900">Todos</span>
+              </button>
+              <button
+                id="blusas"
+                type="button"
+                class="bg-neutral-50 border-b-2 border-neutral-50 px-2 menu-btn"
+              >
+                <span class="text-sm text-neutral-900">Blusas</span>
+              </button>
+              <button
+                id="jeans"
+                type="button"
+                class="bg-neutral-50 border-b-2 border-neutral-50 px-2 menu-btn"
+              >
+                <span class="text-sm text-neutral-900">Jeans</span>
+              </button>
+              <button
+                id="vestidos"
+                type="button"
+                class="bg-neutral-50 border-b-2 border-neutral-50 px-2 menu-btn"
+              >
+                <span class="text-sm text-neutral-900">Vestidos</span>
+              </button>
+              <button
+                id="calcados"
+                type="button"
+                class="bg-neutral-50 border-b-2 border-neutral-50 px-2 menu-btn"
+              >
+                <span class="text-sm text-neutral-900">Calçados</span>
+              </button>
+            </nav>
+            <div class="flex flex-row gap-4 overflow-x-scroll">
+              <div id="card" class="flex flex-col gap-4 w-[200px]">
+                <img
+                  src="https://i.pinimg.com/1200x/39/5e/52/395e5244b1ee2e7da46ccf718fa6a3d7.jpg"
+                  class="max-w-[200px] aspect-1/1 object-cover rounded-md"
+                  alt="Produto 1"
+                />
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <h4 class="text-neutral-900 text-sm font-bold font-content uppercase">
+                      Produto 1
+                    </h4>
+                    <p class="text-neutral-800 text-sm font-content">Tamanhos: P, M e G</p>
+                    <span class="flex flex-col flex-1">
+                      <p class="text-base font-normal line-through">R$ 69,90</p>
+                      <p class="text-lg font-bold">R$ 19,90</p>
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <button
+                      type="button"
+                      class="bg-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-900/90 cursor-pointer"
+                    >
+                      <span class="text-neutral-50 text-lg font-bold uppercase">Comprar</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-neutral-50 border-3 border-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-200 cursor-pointer"
+                    >
+                      <span class="text-neutral-900 text-lg font-bold uppercase">Saber mais</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="card" class="flex flex-col gap-4 w-[200px]">
+                <img
+                  src="https://i.pinimg.com/1200x/20/c8/a3/20c8a35eeeeda81f91e7d74a239b54dd.jpg"
+                  class="max-w-[200px] aspect-1/1 object-cover rounded-md"
+                  alt="Produto 2"
+                />
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <h4 class="text-neutral-900 text-sm font-bold font-content uppercase">
+                      Produto 2
+                    </h4>
+                    <p class="text-neutral-800 text-sm font-content">Tamanhos: P, M e G</p>
+                    <span class="flex flex-col flex-1">
+                      <p class="text-base font-normal line-through">R$ 69,90</p>
+                      <p class="text-lg font-bold">R$ 19,90</p>
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <button
+                      type="button"
+                      class="bg-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-900/90 cursor-pointer"
+                    >
+                      <span class="text-neutral-50 text-lg font-bold uppercase">Comprar</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-neutral-50 border-3 border-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-200 cursor-pointer"
+                    >
+                      <span class="text-neutral-900 text-lg font-bold uppercase">Saber mais</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="card" class="flex flex-col gap-4 w-[200px]">
+                <img
+                  src="https://i.pinimg.com/1200x/54/4b/e0/544be02cb337fd84fda7ae2564cd7038.jpg"
+                  class="max-w-[200px] aspect-1/1 object-cover rounded-md"
+                  alt="Produto 3"
+                />
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <h4 class="text-neutral-900 text-sm font-bold font-content uppercase">
+                      Produto 3
+                    </h4>
+                    <p class="text-neutral-800 text-sm font-content">Tamanhos: P, M e G</p>
+                    <span class="flex flex-col flex-1">
+                      <p class="text-base font-normal line-through">R$ 69,90</p>
+                      <p class="text-lg font-bold">R$ 19,90</p>
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <button
+                      type="button"
+                      class="bg-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-900/90 cursor-pointer"
+                    >
+                      <span class="text-neutral-50 text-lg font-bold uppercase">Comprar</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-neutral-50 border-3 border-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-200 cursor-pointer"
+                    >
+                      <span class="text-neutral-900 text-lg font-bold uppercase">Saber mais</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="card" class="flex flex-col gap-4 w-[200px]">
+                <img
+                  src="https://i.pinimg.com/1200x/9e/53/57/9e535714fccffe86eabdf0dee599172f.jpg"
+                  class="max-w-[200px] aspect-1/1 object-cover rounded-md"
+                  alt="Produto 4"
+                />
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <h4 class="text-neutral-900 text-sm font-bold font-content uppercase">
+                      Produto 4
+                    </h4>
+                    <p class="text-neutral-800 text-sm font-content">Tamanhos: P, M e G</p>
+                    <span class="flex flex-col flex-1">
+                      <p class="text-base font-normal line-through">R$ 69,90</p>
+                      <p class="text-lg font-bold">R$ 19,90</p>
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <button
+                      type="button"
+                      class="bg-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-900/90 cursor-pointer"
+                    >
+                      <span class="text-neutral-50 text-lg font-bold uppercase">Comprar</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-neutral-50 border-3 border-neutral-900 px-3 py-2 transition-all duration-300 hover:bg-neutral-200 cursor-pointer"
+                    >
+                      <span class="text-neutral-900 text-lg font-bold uppercase">Saber mais</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
