@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "prepare": "husky install",
-    "dev": "vite && npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "vite",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js"
