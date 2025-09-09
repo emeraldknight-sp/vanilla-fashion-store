@@ -109,7 +109,13 @@ const renderProducts = (products: Product[]) => {
     });
   } else {
     const warningElement = document.createElement('span');
-    warningElement.classList.add('text-neutral-900', 'text-lg', 'text-center', 'font-bold', "w-full");
+    warningElement.classList.add(
+      'text-neutral-900',
+      'text-lg',
+      'text-center',
+      'font-bold',
+      'w-full'
+    );
 
     warningElement.innerText = 'Sem produtos nessa categoria.';
     collectionContainer.appendChild(warningElement);
